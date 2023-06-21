@@ -7,13 +7,18 @@
 </head>
 <body>
       <form method="post">
-         {% csrf_token %}
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" name="Submit">
+         {% comment %} {% csrf_token %} {% endcomment %}
 
-        {% if email_error_empty %}
+   
+
+        {% comment %} {% if email_error_empty %}
             <p>{{ email_error_empty }}</p>
-        {% endif %}
+        {% endif %} {% endcomment %}
 
-        <label for="f_name">First Name</label>
+        {% comment %} <label for="f_name">First Name</label>
         <input type="text" id="f_name" name="firstname" placeholder="Your First Name" required>
       </br>
         <label for="l_name">Last Name</label>
@@ -22,7 +27,7 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
     </br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"> {% endcomment %}
     
       </form>
 </body>
