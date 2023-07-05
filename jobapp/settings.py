@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'app.apps.AppConfig',
     'subscribe.apps.SubscribeConfig',
     'uploadapp.apps.UploadappConfig',
-
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +136,8 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_S3_ACCESS_KEY_ID = 'AKIAVFBKM32LKL5DKP3M'
+AWS_S3_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'job-app-1976'
