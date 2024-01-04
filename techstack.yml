@@ -1,7 +1,8 @@
 repo_name: marc100s/jobapp_djangosample
-report_id: 31855203f08815dc32520da73d38e886
+report_id: fd9c8318df9d9beb2434c0ba6a625030
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:53:36+00:00'
+timestamp: '2024-01-04T15:09:09+00:00'
 requested_by: marc100s
 provider: github
 branch: main
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -35,6 +38,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: pgvector
   description: Open-source vector similarity search for Postgres
@@ -44,6 +48,7 @@ tools:
   category: Data Stores
   sub_category: Database Tools
   image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
   detection_source: env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
   last_updated_by: marc100s
   last_updated_on: 2023-06-20 17:57:09.000000000 Z
@@ -55,6 +60,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: PyPI
   description: A repository of software for the Python programming language
@@ -64,6 +70,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Hosted Package Repository
   image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: marc100s
   last_updated_on: 2023-07-03 14:52:50.000000000 Z
@@ -75,6 +82,7 @@ tools:
   category: Assets and Media
   sub_category: Image Processing and Management
   image_url: https://img.stackshare.io/service/2375/default_1f67b0ca7416a9f52beb655f90b5602d5ef74b75.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: marc100s
   last_updated_on: 2023-07-03 15:42:42.000000000 Z
@@ -84,6 +92,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/2270/no-img-open-source.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/app/templates/app/hello.html
   detection_source: app/templates/app/hello.html
   last_updated_by: marc100s
   last_updated_on: 2023-06-20 17:57:09.000000000 Z
@@ -95,6 +104,7 @@ tools:
   category: Communications
   sub_category: Large Language Model Tools
   image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
   detection_source: env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
   last_updated_by: marc100s
   last_updated_on: 2023-06-20 17:57:09.000000000 Z
@@ -121,24 +131,24 @@ tools:
     detected_date: May 10
     severity: critical
     first_patched: 4.1.9
-  - name: Resource exhaustion in Django
-    cve_id: CVE-2023-24580
-    cve_url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
-    detected_date: Feb 16
-    severity: high
-    first_patched: 4.0.10
-  - name: 'Django vulnerable to Reflected File Download attack '
-    cve_id: CVE-2022-36359
-    cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
-    detected_date: Aug 12
-    severity: high
-    first_patched: 4.0.7
   - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
     cve_id: CVE-2023-36053
     cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
     detected_date: Jul 6
     severity: high
     first_patched: 4.1.10
+  - name: 'Django vulnerable to Reflected File Download attack '
+    cve_id: CVE-2022-36359
+    cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
+    detected_date: Aug 12
+    severity: high
+    first_patched: 4.0.7
+  - name: Resource exhaustion in Django
+    cve_id: CVE-2023-24580
+    cve_url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
+    detected_date: Feb 16
+    severity: high
+    first_patched: 4.0.10
 - name: asgiref
   description: ASGI specs, helper code, and adapters
   package_url: https://pypi.org/project/asgiref
