@@ -1,11 +1,12 @@
 repo_name: marc100s/jobapp_djangosample
 report_id: fd9c8318df9d9beb2434c0ba6a625030
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-09T17:14:45+00:00'
+timestamp: '2024-01-05T09:11:53+00:00'
 requested_by: marc100s
 provider: github
 branch: main
-detected_tools_count: 7
+detected_tools_count: 21
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -35,7 +38,20 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
+  detection_source: env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-06-20 17:57:09.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -44,6 +60,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample
   detection_source: Repo Metadata
 - name: PyPI
   description: A repository of software for the Python programming language
@@ -53,6 +70,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Hosted Package Repository
   image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: marc100s
   last_updated_on: 2023-07-03 14:52:50.000000000 Z
@@ -64,12 +82,90 @@ tools:
   category: Assets and Media
   sub_category: Image Processing and Management
   image_url: https://img.stackshare.io/service/2375/default_1f67b0ca7416a9f52beb655f90b5602d5ef74b75.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: marc100s
   last_updated_on: 2023-07-03 15:42:42.000000000 Z
+- name: HTML
+  description: Hypertext Markup Language for creating web pages.
+  website_url: http://
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/2270/no-img-open-source.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/app/templates/app/hello.html
+  detection_source: app/templates/app/hello.html
+  last_updated_by: marc100s
+  last_updated_on: 2023-06-20 17:57:09.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
+  detection_source: env/lib/python3.10/site-packages/Django-4.1.7.dist-info/entry_points.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-06-20 17:57:09.000000000 Z
+- name: Django
+  description: A high-level Python Web framework that encourages rapid development
+    and clean
+  package_url: https://pypi.org/project/Django
+  version: 4.0.5
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19832/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-06 18:43:03.000000000 Z
+  vulnerabilities:
+  - name: Django bypasses validation when using one form field to upload multiple
+      files
+    cve_id: CVE-2023-31047
+    cve_url: https://github.com/advisories/GHSA-r3xc-prgr-mg9p
+    detected_date: May 10
+    severity: critical
+    first_patched: 4.1.9
+  - name: Django has regular expression denial of service vulnerability in EmailValidator/URLValidator
+    cve_id: CVE-2023-36053
+    cve_url: https://github.com/advisories/GHSA-jh3w-4vvf-mjgr
+    detected_date: Jul 6
+    severity: high
+    first_patched: 4.1.10
+  - name: 'Django vulnerable to Reflected File Download attack '
+    cve_id: CVE-2022-36359
+    cve_url: https://github.com/advisories/GHSA-8x94-hmjh-97hq
+    detected_date: Aug 12
+    severity: high
+    first_patched: 4.0.7
+  - name: Resource exhaustion in Django
+    cve_id: CVE-2023-24580
+    cve_url: https://github.com/advisories/GHSA-2hrw-hx67-34x6
+    detected_date: Feb 16
+    severity: high
+    first_patched: 4.0.10
+- name: asgiref
+  description: ASGI specs, helper code, and adapters
+  package_url: https://pypi.org/project/asgiref
+  version: 3.5.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20739/default_88a4948f616ae7ccb7210803d2bd72b72851b6e9.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-03 14:52:50.000000000 Z
 - name: boto3
   description: The AWS SDK for Python
-  package_url: https://pypi.org/boto3
+  package_url: https://pypi.org/project/boto3
   version: 1.27.0
   license: Apache-2.0
   open_source: true
@@ -77,7 +173,141 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19840/default_1c41e593803157c668b26f27387160254f0f5371.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-05 16:52:04.000000000 Z
+- name: botocore
+  description: Low-level, data-driven core of boto 3
+  package_url: https://pypi.org/project/botocore
+  version: 1.30.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19884/default_b8be3f20d4af87021ae3618d5c50b72c985ea31f.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-05 16:52:04.000000000 Z
+- name: django-storages
+  description: Support for many storage backends in Django
+  package_url: https://pypi.org/project/django-storages
+  version: 1.13.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-06 18:43:03.000000000 Z
+- name: gunicorn
+  description: WSGI HTTP Server for UNIX
+  package_url: https://pypi.org/project/gunicorn
+  version: 20.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19931/default_74a0c20721d3a0a1484d69586401591fe8993db2.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-03 15:42:42.000000000 Z
+- name: jmespath
+  description: JSON Matching Expressions
+  package_url: https://pypi.org/project/jmespath
+  version: 1.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19993/default_1ae269f6aa26d7008f18ed620309f6ae89bbfa12.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-05 16:52:04.000000000 Z
+- name: psycopg2
+  description: Psycopg2 - Python-PostgreSQL Database Adapter
+  package_url: https://pypi.org/project/psycopg2
+  version: 2.9.3
+  license: BSD-3-Clause-Attribution
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20416/default_64aa60b33468d1d28611966765867676f6303b64.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-06 18:43:03.000000000 Z
+- name: python-dateutil
+  description: Extensions to the standard Python datetime module
+  package_url: https://pypi.org/project/python-dateutil
+  version: 2.8.2
+  license: NRL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-05 16:52:04.000000000 Z
+- name: s3transfer
+  description: An Amazon S3 Transfer Manager
+  package_url: https://pypi.org/project/s3transfer
+  version: 0.6.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20042/default_15ea2ed8281eccea374610791971ca44800f16ec.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-05 16:52:04.000000000 Z
+- name: sqlparse
+  description: Non-validating SQL parser
+  package_url: https://pypi.org/project/sqlparse
+  version: 0.4.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20039/default_a7a70921d2d3189665c78015850dc968f41705a1.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: marc100s
+  last_updated_on: 2023-07-03 15:42:42.000000000 Z
+  vulnerabilities:
+  - name: sqlparse contains a regular expression that is vulnerable to Regular Expression
+      Denial of Service
+    cve_id: CVE-2023-30608
+    cve_url: https://github.com/advisories/GHSA-rrm6-wvj7-cwh2
+    detected_date: Apr 22
+    severity: moderate
+    first_patched: 0.4.4
+- name: whitenoise
+  description: Radically simplified static file serving for WSGI applications
+  package_url: https://pypi.org/project/whitenoise
+  version: 6.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20302/default_e6bfb9eb79752f0f359e80676966e216a56792ab.png
+  detection_source_url: https://github.com/marc100s/jobapp_djangosample/blob/main/requirements.txt
   detection_source: requirements.txt
   last_updated_by: marc100s
   last_updated_on: 2023-07-05 16:52:04.000000000 Z
